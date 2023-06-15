@@ -20,8 +20,8 @@ body {
 body>*,
 .main-container>* {
     /* min-width: 100px; */
-    min-height: 100px;
-    border: 1px dashed yellow;
+    min-height: 80px;
+    /* border: 1px dashed yellow; */
 }
 
 .main-container {
@@ -37,7 +37,7 @@ body>*,
 
 .header {
     height: 100px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 /* utils */
@@ -223,25 +223,22 @@ li {
 /* footer nav */
 
 .footer>* {
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
     min-height: 80px;
     width: 20%;
     background-color: #282828;
 }
 
-.footer {
+/* .footer {
     min-width: 100px;
     min-height: 100px;
 
-}
+} */
 
-.footer,
-.info-track,
-.player,
-.volume {
+/* .footer {
     min-height: 100px;
     min-width: 100px;
-}
+} */
 
 .player {
     flex-grow: 1;
