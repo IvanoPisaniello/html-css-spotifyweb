@@ -19,7 +19,7 @@ body {
 
 body>*,
 .main-container>* {
-    min-width: 100px;
+    /* min-width: 100px; */
     min-height: 100px;
     border: 1px dashed yellow;
 }
@@ -135,6 +135,19 @@ li {
     margin: 10px 0;
 }
 
+.logo-small {
+    height: 20px;
+}
+
+.block li {
+    list-style-type: none;
+    margin-left: -20px;
+}
+
+.block {
+    display: none;
+}
+
 .middle {}
 
 .fa-lines-learning {}
@@ -216,6 +229,20 @@ li {
     background-color: #282828;
 }
 
+.footer {
+    min-width: 100px;
+    min-height: 100px;
+
+}
+
+.footer,
+.info-track,
+.player,
+.volume {
+    min-height: 100px;
+    min-width: 100px;
+}
+
 .player {
     flex-grow: 1;
 }
@@ -226,8 +253,17 @@ li {
 
 /* responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 599px) {
     .main-container .navbar {
         width: 30px;
     }
+
+    .navbar .none {
+        display: none;
+    }
+
+    .block {
+        display: block;
+    }
+
 }
