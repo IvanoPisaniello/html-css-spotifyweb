@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-color: #141922;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+body>*,
+.main-container>* {
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px dashed yellow;
+}
+
+.main-container {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.navbar {
+    flex-shrink: 0;
+    overflow: auto;
+}
+
+.main-content {
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.header {
+    height: 100px;
+    border: 1px solid yellow;
+}
+
+/* utils */
+.txt-white {
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.border {
+    border: 1px dashed red;
+}
+
+.paddingtop30 {
+    padding-top: 30px;
+}
+
+.margintop30 {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+
+/* main content */
+.card-container {
+    flex-direction: column;
+    padding: 20px;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.menu-content {
+    justify-content: center;
+
+}
+
+.content-list {
+    border: 1px dashed red;
+}
+
+.cards {
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc((100% / 6) - 1rem);
+    min-height: 100px;
+    flex-shrink: 0;
+
+}
+
+.card-john {
+    flex-basis: 150px;
+    min-height: 100px;
+}
+
+/* footer nav */
+
+.footer>* {
+    border: 1px dashed red;
+    min-height: 80px;
+    min-width: 300px;
+}
+
+.player {
+    flex-grow: 1;
+}
