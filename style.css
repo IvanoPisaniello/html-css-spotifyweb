@@ -289,6 +289,7 @@ li {
     flex-basis: calc((100% / 6) - 1rem);
     flex-shrink: 0;
     /* min-width: 100px; */
+    position: relative;
 }
 
 .card-john {
@@ -299,6 +300,7 @@ li {
 .cards img {
     width: 100%;
     /* height: 100%; */
+    cursor: pointer;
 
 }
 
@@ -313,6 +315,26 @@ li {
 
 .circles-img {
     border-radius: 50%;
+}
+
+.card img:hover {
+    filter: brightness(50%);
+}
+
+.card img:hover~.play-icon {
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    display: none;
+}
+
+.play-icon .fa-circle-play {
+    color: white;
+    font-size: 3rem;
 }
 
 /* footer nav */
@@ -339,9 +361,135 @@ li {
     flex-grow: 1;
 }
 
+.info-track {
+    padding: 20px;
+    min-width: 115px;
+    gap: 5%;
+}
+
+.sinister-small {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-txt {
+    padding-top: 5px;
+}
+
+.footer-txt p,
+h4 {
+    font-size: 10px;
+}
+
+.footer a {
+    color: grey;
+    margin: 5px;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.img-footer {
+    /* margin-right: 20px; */
+}
+
+.icons-footer-left {}
+
+
+.player {
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-buttons {
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 20px;
+}
+
+.volume {
+    min-width: 115px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.player-line {
+    height: 5px;
+    background-color: grey;
+    width: 80%;
+    border-radius: 50px;
+
+}
+
+.player-line-white {
+    height: 5px;
+    background-color: white;
+    width: 30%;
+    border-radius: 50px;
+    position: relative;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.1);
+}
 
 
 
+.volume-bar {
+    height: 5px;
+    background-color: grey;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.volume-bar-white {
+    height: 5px;
+    background-color: white;
+    width: 30%;
+    border-radius: 50px;
+    position: relative;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 98%;
+    top: -5px;
+    display: none;
+}
+
+.player-line:hover .circle {
+    display: block;
+}
+
+.player-line:hover .player-line-white {
+    background-color: #ADFF2E;
+}
+
+
+.circle-volume {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 90%;
+    top: -5px;
+    display: none;
+}
+
+.volume-bar:hover .volume-bar-white {
+    background-color: #ADFF2E;
+}
+
+.volume-bar:hover .circle-volume {
+    display: block;
+}
 
 /* responsive */
 
@@ -396,4 +544,13 @@ li {
         border-bottom: none;
 
     }
+
+    .icons-footer-left {
+        flex-direction: column;
+    }
+}
+
+
+.footer-box {
+    flex-basis: calc(100% / 3);
 }
