@@ -116,13 +116,19 @@ li {
     padding: 20px;
 }
 
+
+.navbar {
+    flex-direction: column;
+}
+
 .menu-side {
     height: 100%;
 }
 
 .playlist {
     overflow: auto;
-    height: 460px;
+    /* height: 460px; */
+    display: flex;
 }
 
 .navbar li {
@@ -160,6 +166,9 @@ li {
 
 .block {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .none {
@@ -167,7 +176,37 @@ li {
 }
 
 .side-bottom {
-    margin-top: auto;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.bottom-txt {
+    font-size: 12px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.block ul {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.bottom-doe {
+    font-size: 13px;
+}
+
+.bottom-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
 }
 
 .middle {}
@@ -337,7 +376,7 @@ li {
     }
 
     .block {
-        display: block;
+        display: flex;
     }
 
     .card {
@@ -346,5 +385,15 @@ li {
 
     .card-john {
         min-width: 40%;
+    }
+
+    .bottom-icons {
+        /* margin-top: 420px;
+        margin-left: -20px; */
+    }
+
+    .bottom-txt {
+        border-bottom: none;
+
     }
 }
