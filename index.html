@@ -13,7 +13,9 @@
 </head>
 
 <body>
-
+    <!-- alert -->
+    <script> alert('Hi! Search, Library, Playlist and Play buttons are functionals, Try them!');
+    </script>
 
     <div class="main-container d-flex">
         <!-- side navbar -->
@@ -26,13 +28,31 @@
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-house"></i> <span class="">Home</span></a>
                         </li>
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span class="">Search</span></a>
+                        <li><a class="search" tabindex="1" href="#"><i class="fa-solid fa-magnifying-glass"></i> <span
+                                    class="">Search</span></a>
+                            <div class="search-bar"><input type="Search a track or singer"
+                                    placeholder="Search a song or Artist"></div>
                         </li>
-                        <li><a href="#"><i class="fa-solid fa-lines-leaning"></i> <span class="">Library</span></a></li>
+                        <li><a class="library-button" tabindex="1" href="#"><i class="fa-solid fa-lines-leaning"></i>
+                                <span class="">Library</span></a>
+                            <div class="library-container">
+                                <ul>
+                                    <li> <img src="img/metal_lifting.jpg" alt="" class="library-img"> <span>Heavy
+                                            metal</span></li>
+                                    <li><img src="img/aquietplace.jpeg" alt="" class="library-img"> <span>A quite
+                                            place</span></li>
+                                    <li><img src="img/split.jpeg" alt="" class="library-img"> <span>Split</span></li>
+                                    <li><img src="img/cure.jpeg" alt="" class="library-img"> <span>A cure fo...</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                     <h3 class="txt-white margintop10">PLAYLIST</h3>
-                    <a href="#"><i class="fa-solid fa-square-plus"></i> <span class="middle">Crea
+                    <a class="playlist" href="#"><i class="fa-solid fa-square-plus"></i> <span
+                            class="middle playlist-txt">Crea
                             Playlist</span></a>
+                    <input type="create a playlist" placeholder="Playlist name..." class="new-playlist">
                 </div>
             </div>
             <div class="playlist none">
@@ -227,9 +247,11 @@
             <div class="player-buttons d-flex">
                 <a href="#"><i class="fa-solid fa-shuffle"></i></a>
                 <a href="#"><i class="fa-solid fa-backward-step"></i></a>
-                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a class="play" href="#"><i class="fa-regular fa-circle-play"></i></a>
+                <a class="pause" href="#"><i class="fa-solid fa-circle-pause txt-white"></i></i></a>
                 <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                 <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                <div class="player-line-function"></div>
             </div>
             <div class="player-line d-flex">
                 <div class="player-line-white">
