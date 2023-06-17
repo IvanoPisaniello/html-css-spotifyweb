@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Spotify</title>
 </head>
 
 <body>
     <!-- alert -->
-    <script> alert('Hi! Search, Library, Playlist and Play buttons are functionals, Try them!');
+    <script> alert('Ciao! i pulsanti Search, Library, playlist e il pulsante play del player sono "animati", provali!');
     </script>
 
     <div class="main-container d-flex">
         <!-- side navbar -->
-        <div class="navbar d-flex">
+        <div class="navbar d-flex relative">
             <div class="none">
                 <img src="img/logo.svg" alt="" class="logo-svg">
             </div>
@@ -91,11 +91,27 @@
             </div>
 
             <div class="block d-flex">
-                <ul>
+                <ul class="relative">
                     <li><a href="#"><img src="img/logo-small.svg" alt="" class="logo-small"></a></li>
                     <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-lines-leaning"></i></a></li>
+                    <li class=""><a class="search-small-focus" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <div class="search-small-li">
+                            <input type="Search a track or singer" placeholder="Search a song or Artist">
+                        </div>
+                    </li>
+
+                    <li><a class="library-button-small" tabindex="1" href="#"><i
+                                class="fa-solid fa-lines-leaning"></i></a>
+                        <div class="library-container-small">
+                            <ul>
+                                <li> <img src="img/metal_lifting.jpg" alt="" class="library-img"></li>
+                                <li><img src="img/aquietplace.jpeg" alt="" class="library-img"> </li>
+                                <li><img src="img/split.jpeg" alt="" class="library-img"> </li>
+                                <li><img src="img/cure.jpeg" alt="" class="library-img">
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 <div class="bottom-icons">
                     <a class="txt-white bottom-txt" href="#"> <span><i class="fa-solid fa-circle-arrow-down"></i></a>
@@ -253,7 +269,11 @@
                 <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 <div class="player-line-function"></div>
             </div>
+            <span class="txt-white time-right">4:35</span>
             <div class="player-line d-flex">
+
+                <span class="txt-white time-left">0:25</span>
+
                 <div class="player-line-white">
                     <div class="circle">
 
