@@ -326,13 +326,18 @@ input {
 }
 
 /* box-content */
-.content-list a:hover {
-    color: white;
-    border-bottom: 2px solid #ADFF2E;
-    padding-bottom: 3px;
+.content-list a:focus::after {
+    content: "";
+    border-bottom: 3px solid #ADFF2E;
+    width: 25px;
+    display: block;
+    margin-left: 30%;
 
 }
 
+.content-list a:hover {
+    color: white;
+}
 
 
 
@@ -540,7 +545,7 @@ h4 {
 .volume-bar {
     height: 5px;
     background-color: grey;
-    width: 100px;
+    width: 70px;
     border-radius: 50px;
 }
 
@@ -610,6 +615,10 @@ h4 {
 .play:focus~.player-line-function {
     /* width: 275px; */
     animation: animation 10s linear;
+}
+
+.icons-footer-right .fa-solid {
+    font-size: 12px;
 }
 
 @keyframes animation {
@@ -696,6 +705,7 @@ h4 {
     .icons-footer-left {
         flex-direction: column;
     }
+
 }
 
 
